@@ -2,6 +2,7 @@
 
 
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const HeroSection = () => {
@@ -15,9 +16,10 @@ const HeroSection = () => {
           height={600}
           className="w-full h-auto object-cover"
         />
-        <button className="absolute bottom-6 cursor-pointer left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-black text-lg px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+        <Link href="/book-appointment">
+        <button className="absolute bottom-24 cursor-pointer left-1/2 transform -translate-x-[40%] -translate-y-1/2 bg-blue-600 text-black text-xl font-bold px-6 py-2 rounded-lg hover:bg-blue-700 transition">
           Book Appointment
-        </button>
+        </button></Link>
       </div>
     <Image 
   src="/ban.jpg"
